@@ -1,6 +1,7 @@
 # memoryGame
 
-
+## Table of Contents
+* [Credits](#CREDITS)
 ## CREDITS
 
 ### NOTEPEN FONT
