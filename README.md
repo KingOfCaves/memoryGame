@@ -16,5 +16,5 @@
 >Github Icon made by https://www.flaticon.com/authors/daniel-bruce from https://flaticon.com
 
 ### DESIGN / INSPIRATION
-> All designs and images are inspired by the N-Card mini-game from Super Mario Bros. 3 and the card sprites were ripped directly
-> from the game. SMB3 and the Mario Bros. series are owned by Nintendo.
+> All designs and images are inspired by the N-Card mini-game from Super Mario Bros. 3 and the title screen from Super Mario Bros. All
+> Stars. The Super Mario Bros. series is owned by Nintendo.
