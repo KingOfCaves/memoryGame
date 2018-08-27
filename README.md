@@ -15,7 +15,7 @@
 ### GITHUB LOGO
 >Github Icon made by https://www.flaticon.com/authors/daniel-bruce from https://flaticon.com
 >
->Liscences under CC BY 3.0: http://creativecommons.org/licenses/by/3.0/
+>Licensed under CC BY 3.0: http://creativecommons.org/licenses/by/3.0/
 
 ### DESIGN / INSPIRATION
 > All designs and images are inspired by the N-Card mini-game from Super Mario Bros. 3 and the title screen from Super Mario Bros. All
