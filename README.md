@@ -1,5 +1,7 @@
 # memoryGame
 
+
+### CREDITS
 >Quadrunde by jeti: A standard geometric sans serif that is as perfectly round as tiny squares can be.
 >
 >You are free to use this font for personal or commercial projects, all I ask is that you include credit.
