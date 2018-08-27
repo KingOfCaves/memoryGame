@@ -3,7 +3,7 @@
 ## Table of Contents
 * [Credits](#CREDITS)
 
-## CREDITS
+## Credits
 
 ### NOTEPEN FONT
 >Notepen by jeti: A pixel recreation of my handwriting. To keep things natural and lively, every single letter is unique, including
