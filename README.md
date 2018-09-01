@@ -20,6 +20,9 @@
 >
 >Licensed under CC BY 3.0: http://creativecommons.org/licenses/by/3.0/
 
+### Shuffle
+>Shuffle function from http://stackoverflow.com/a/2450976
+
 ### Design / Inspiration
 > All designs and images are inspired by the N-Card mini-game from Super Mario Bros. 3 and the title screen from Super Mario Bros. All
 > Stars. The Super Mario Bros. series is owned by Nintendo.
