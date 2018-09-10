@@ -4,7 +4,7 @@
     --color-3: #299cef;
     --color-4: #fff;
     --color-5: #0f0f0f;
-    --color-6: #86ffb4;
+    --color-6: #84ffda;
     --color-7: #1b89f7;
 
     --border-1: 0 0 0 .5rem var(--color-3),
@@ -123,7 +123,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    z-index: 10;
+    z-index: 12;
     transition: all 1.4s, opacity .4s;
 }
 .flip.card::after{
@@ -135,7 +135,7 @@ body {
     top: .2rem;
     right: .2rem;
     opacity: 0;
-    z-index: 12;
+    z-index: 14;
     transition: opacity .4s;
     font-size: 2.4rem;
     color: var(--color-5);
@@ -205,7 +205,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -55%);
-    z-index: 14;
+    z-index: 16;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -295,7 +295,7 @@ body {
     .card {
         margin: .5rem;
         width: 8rem;
-        height: 6rem;
+        height: 5rem;
     }
     .game-ui {
         margin-top: .75rem;
