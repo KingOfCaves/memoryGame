@@ -1,0 +1,359 @@
+:root {
+    --color-1: #382478;
+    --color-2: #0863ad;
+    --color-3: #299cef;
+    --color-4: #fff;
+    --color-5: #0f0f0f;
+    --color-6: #94ff86;
+    --color-7: #1b89f7;
+
+    --border-1: 0 0 0 .5rem var(--color-3),
+                0 0 0 1rem var(--color-4),
+                0 0 0 1.5rem var(--color-5);
+                /* 0 0 3rem 1.5rem rgba(0,0,0,0.6); */
+    --border-2: 0 0 0 .8rem var(--color-4);
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url("../img/bg5.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+
+    font-family: "notepenmedium";
+    color: var(--color-4);
+}
+.wrapper {
+    width: 84rem;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.display {
+    position: relative;
+    height: auto;
+    width: auto;
+}
+
+.header {
+    height: auto;
+    width: 64rem;
+    margin-bottom: 1rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 4.8rem;
+}
+.github-link {
+    display: flex;
+    align-items: center;
+}
+.github-link:link, .github-link:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.github-logo {
+    width: 4rem;
+    height: 4rem;
+    margin-left: .4rem;
+}
+
+.table-top {
+    height: auto;
+    width: auto;
+    padding: 4rem;
+    padding-bottom: 6rem;
+    /* overflow: hidden; */
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    cursor: cell;
+}
+.card {
+    position: relative;
+    width: 14rem;
+    height: 10rem;
+    margin: 2rem;
+
+    transition: transform .3s;
+    flex-shrink: 0;
+    z-index: 10;
+    box-shadow: 0 0 2rem rgba(0,0,0,0.8);
+    background-image:
+        linear-gradient(
+            to bottom,
+            var(--color-6),
+            var(--color-7));
+    /* border: .6rem solid var(--color-4); */
+}
+.card:hover:not(.flip) {
+    transform: translateY(-8px);
+}
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image:
+        linear-gradient(
+            to bottom,
+            var(--color-6),
+            var(--color-7)),
+        url("../img/card-back.gif");
+    background-blend-mode: color;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 10;
+    transition: all 1.4s, opacity .4s;
+}
+.flip.card::after{
+    opacity: 0;
+}
+.status {
+    display: block;
+    position: absolute;
+    top: .2rem;
+    right: .2rem;
+    opacity: 0;
+    z-index: 12;
+    transition: opacity .4s;
+    font-size: 2.4rem;
+    color: var(--color-5);
+}
+.flip .status {
+    opacity: .6;
+}
+.type {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: .6;
+    z-index: 10;
+    font-size: 7rem;
+    color: var(--color-5);
+}
+.game-ui {
+    height: auto;
+    width: 75%;
+    margin-top: -4rem;
+    padding: 1rem 3rem;
+    z-index: 20;
+
+    background-color: var(--color-2);
+    box-shadow: var(--border-1);
+
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    cursor: default;
+}
+.prompt {
+    margin-right: 1rem;
+    font-size: 1.2em;
+    width: 20rem;
+    text-align: center;
+}
+.rank {
+    display: flex;
+    margin-right: auto;
+    font-size: .6em;
+}
+.rank *:not(:last-child) {
+    margin-right: 1rem;
+}
+.redo {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.redo svg {
+    width: 3rem;
+    height: 3rem;
+    transition: all 1s;
+    fill: var(--color-4);
+}
+.redo:hover svg{
+    transform: rotateZ(-360deg);
+}
+
+.results {
+    width: 100%;
+    height: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -55%);
+    z-index: 14;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all 1s;
+    overflow: hidden;
+}
+.results * {
+    opacity: 0;
+    transition: inherit;
+}
+.results-open {
+    background-color: var(--color-2);
+    box-shadow: var(--border-1);
+    height: 30%;
+}
+.results-open * {
+    opacity: 1;
+}
+.results__title {
+    margin-bottom: 1rem;
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+.time {
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 1200px) {
+    .card {
+        margin: 1.5rem;
+        width: 12rem;
+        height: 8rem;
+
+    }
+    .game-ui {
+        width: 60rem;
+    }
+    .type {
+        font-size: 5rem;
+    }
+    .card:hover:not(.flip) {
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width: 900px),  screen and (max-height: 700px){
+    :root {
+        --border-1: 0 0 0 .25rem var(--color-3),
+                0 0 0 .5rem var(--color-4),
+                0 0 0 .75rem var(--color-5);
+    }
+    body {
+        overflow: hidden;
+    }
+    .wrapper {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header {
+        width: 30rem;
+        position: absolute;
+        left: 4rem;
+        top: 50%;
+        font-size: 3rem;
+        transform:
+            translate(-50%, -50%)
+            rotate(-90deg);
+    }
+    .title {
+        display: none;
+        margin: 2rem;
+    }
+    .github-logo {
+        width: 2rem;
+        height: 2rem;
+    }
+    .github-link {
+        margin: 0 auto;
+    }
+    .table-top {
+        padding: 0;
+    }
+    .card {
+        margin: .5rem;
+        width: 8rem;
+        height: 6rem;
+    }
+    .game-ui {
+        margin-top: .75rem;
+        font-size: 2.4rem;
+        width: 36rem;
+        padding: 0;
+    }
+    .prompt {
+        width: auto;
+        margin: 0 1rem;
+    }
+    .redo {
+        padding: 1rem;
+    }
+    .redo svg{
+        width: 2rem;
+        height: 2rem;
+    }
+    .status {
+        font-size: 1.2rem;
+    }
+    .type {
+        font-size: 3rem;
+    }
+    .results__title {
+        font-size: 2.6rem;
+    }
+    .time {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 6rem;
+        height: 4rem;
+    }
+    
+    .game-ui {
+        width: 24rem;
+    }
+}
+
+@media screen and (min-height: 460px) {
+    .header {
+        display: flex;
+        position: absolute;
+        top: 3rem;
+        left: 50%;
+        font-size: 3rem;
+        transform:
+            translate(-50%, 0)
+            rotate(0);
+    }
+}
+
+@media screen and (max-height: 400px){
+    .game-ui {
+        margin-top: 0.5rem;
+    }
+}
