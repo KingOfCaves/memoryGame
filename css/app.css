@@ -89,7 +89,7 @@ body {
 .card {
     position: relative;
     width: 14rem;
-    height: 10rem;
+    height: 12rem;
     margin: 2rem;
 
     transition: transform .3s;
@@ -234,7 +234,7 @@ body {
     font-size: 5rem;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px), screen and (max-height: 900px) {
     .card {
         margin: 1.5rem;
         width: 12rem;
@@ -291,8 +291,8 @@ body {
     }
     .card {
         margin: .5rem;
-        width: 8rem;
-        height: 5rem;
+        width: 10rem;
+        height: 8rem;
     }
     .card:hover:not(.flip) {
         transform: translateY(0);
@@ -328,6 +328,28 @@ body {
     }
 }
 
+@media screen and (max-width: 800px) {
+    .card {
+        width: 9rem;
+        height: 7rem;
+    }
+    
+    .game-ui {
+        width: 24rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card {
+        width: 8rem;
+        height: 6rem;
+    }
+    
+    .game-ui {
+        width: 24rem;
+    }
+}
+
 @media screen and (max-width: 500px) {
     .card {
         width: 6rem;
@@ -339,7 +361,7 @@ body {
     }
 }
 
-@media screen and (min-height: 460px) and (max-height: 800px) {
+@media screen and (min-height: 400px) and (min-width: 300px) {
     .header {
         display: flex;
         position: absolute;
