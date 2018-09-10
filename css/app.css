@@ -118,7 +118,7 @@ body {
             to bottom,
             var(--color-6),
             var(--color-7)),
-        url("../img/card-back.gif");
+        url("../img/card-back.png");
     background-blend-mode: color;
     background-size: cover;
     background-repeat: no-repeat;
