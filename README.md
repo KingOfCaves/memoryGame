@@ -4,7 +4,7 @@
 * [Initializing](#initializing)
 * [Contributing](#contributing)
 * [Game](#game)
-* [Issues / Bugs](#issues)
+* [Issues / Bugs](#issues--bugs)
 * [Credits](#credits)
 
 ## INITIALIZING
