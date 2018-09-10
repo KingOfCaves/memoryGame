@@ -12,6 +12,8 @@ If you would like to download the files and take a look at the code, please go a
 
 If you just want to try out the application just click [here](), it will take you to a live version hosted by Github Pages.
 
+NOTE: The /docs folder is not neccessary. I only used it to store .psd files and sprite sheets. Feel free to check them out or delete them.
+
 ## CONTRIBUTING
 pls help
 if you can, thanks in advance
