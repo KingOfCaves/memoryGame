@@ -53,5 +53,5 @@ If you find problems concerning the media queries, please report them in reposit
 >Shuffle function from http://stackoverflow.com/a/2450976
 
 ### Design / Inspiration
-> All designs and images are inspired by the N-Card mini-game from Super Mario Bros. 3 and the title screen from Super Mario Bros. All
-> Stars. The Super Mario Bros. series is owned by Nintendo.
+> Some designs are inspired by the N-Card mini-game from Super Mario Bros. 3. The Super Mario Bros. series is owned by 
+> Nintendo.
