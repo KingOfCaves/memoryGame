@@ -30,6 +30,8 @@ To reset the table, time, and rank, just click the redo arrow in the bottom righ
 
 I have yet to find a bug or issue, it looks like i accidently fixed most of the things that were bugging me. My only concern is how it looks on mobile devices. Most will look REALLY good, but some devices with smaller resolutions might not look or work as well. 
 
+Some devices look way better in portrait mode, give it try!
+
 If you find problems concerning the media queries, please report them in repository's issues.
 
 ## CREDITS
