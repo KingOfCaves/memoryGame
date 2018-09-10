@@ -1,9 +1,10 @@
 # memoryGame
 
 ## TABLE OF CONTENTS
-* [Initializing](#INITIALIZING)
-* [Contributing](#CONTRIBUTING)
-* [Credits](#CREDITS)
+* [Initializing](#initializing)
+* [Contributing](#contributing)
+* [Game](#game)
+* [Credits](#credits)
 
 ## INITIALIZING
 If you would like to download the files and take a look at the code, please go ahead! All you have to do is download a copy of the main repository and then extract the files.
