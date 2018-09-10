@@ -51,6 +51,10 @@ If you find problems concerning the media queries, please report them in reposit
 >
 >Licensed under CC BY 3.0: http://creativecommons.org/licenses/by/3.0/
 
+## Background
+>https://www.reddit.com/r/wallpapers/comments/5jf8xa/pixel_art_wallpaper_gallery/
+>Not entirely sure who the artist is, but this is where i got the image from
+
 ### Shuffle
 >Shuffle function from http://stackoverflow.com/a/2450976
 
