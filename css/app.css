@@ -247,9 +247,6 @@ body {
     .type {
         font-size: 5rem;
     }
-    .card:hover:not(.flip) {
-        transform: translateY(0);
-    }
 }
 
 @media screen and (max-width: 900px),  screen and (max-height: 700px){
@@ -296,6 +293,9 @@ body {
         margin: .5rem;
         width: 8rem;
         height: 5rem;
+    }
+    .card:hover:not(.flip) {
+        transform: translateY(0);
     }
     .game-ui {
         margin-top: .75rem;
