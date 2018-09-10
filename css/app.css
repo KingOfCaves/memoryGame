@@ -339,7 +339,7 @@ body {
     }
 }
 
-@media screen and (min-height: 460px) {
+@media screen and (min-height: 460px) and (max-height: 800px) {
     .header {
         display: flex;
         position: absolute;
