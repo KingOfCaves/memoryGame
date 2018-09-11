@@ -10,7 +10,7 @@
 ## INITIALIZING
 If you would like to download the files and take a look at the code, please go ahead! All you have to do is download a copy of the main repository and then extract the files.
 
-If you just want to try out the application just click [here](https://kingofcaves.github.io/memoryGame/), it will take you to a live version hosted by Github Pages.
+If you just want to try out the application just click [here](https://kingofcaves.github.io/memoryGame/index.html), it will take you to a live version hosted by Github Pages.
 
 NOTE: The /docs folder is not neccessary. I only used it to store .psd files and sprite sheets. Feel free to check them out or delete them.
 
@@ -55,7 +55,8 @@ If you find problems concerning the media queries, please report them in reposit
 
 ## Background
 >https://www.reddit.com/r/wallpapers/comments/5jf8xa/pixel_art_wallpaper_gallery/
->Not entirely sure who the artist is, but this is where i got the image from
+>
+>Not entirely sure who the artist is, but this is where i got the image from.
 
 ### Shuffle
 >Shuffle function from http://stackoverflow.com/a/2450976
