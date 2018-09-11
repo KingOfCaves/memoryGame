@@ -173,6 +173,7 @@ body {
     margin-right: 1rem;
     width: 20rem;
     text-align: center;
+    font-size: 1.2em;
 }
 .rank {
     display: flex;
