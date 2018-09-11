@@ -11,7 +11,7 @@
                 0 0 0 1rem var(--color-4),
                 0 0 0 1.5rem var(--color-5);
                 /* 0 0 3rem 1.5rem rgba(0,0,0,0.6); */
-    --border-2: 0 0 0 .8rem var(--color-4);
+    --border-2: 0 0 0 .3rem var(--color-4);
 }
 html {
     font-size: 62.5%;
@@ -101,7 +101,8 @@ body {
             to bottom,
             var(--color-6),
             var(--color-7));
-    /* border: .6rem solid var(--color-4); */
+    backface-visibility: hidden;
+    /* box-shadow: var(--border-2); */
 }
 .card:hover:not(.flip) {
     transform: translateY(-8px);
@@ -125,6 +126,7 @@ body {
     background-position: center;
     z-index: 12;
     transition: all 1.4s, opacity .4s;
+    backface-visibility: hidden;
 }
 .flip.card::after{
     opacity: 0;
