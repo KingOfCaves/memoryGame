@@ -166,12 +166,11 @@ body {
 
     display: flex;
     align-items: center;
-    font-size: 4rem;
+    font-size: 4.8rem;
     cursor: default;
 }
 .prompt {
     margin-right: 1rem;
-    font-size: 1.2em;
     width: 20rem;
     text-align: center;
 }
