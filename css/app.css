@@ -106,9 +106,9 @@ body {
     /* box-shadow: var(--border-2); */
 }
 .card:hover:not(.flip) {
-    transform: translateY(-8px);
+    transform: translateY(-4px);
 }
-.card::after {
+.card::before {
     content: "";
     position: absolute;
     top: 0;
@@ -130,7 +130,8 @@ body {
     backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
-.flip.card::after{
+.flip.card::before{
+    content: "";
     opacity: 0;
 }
 .status {
