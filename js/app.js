@@ -204,7 +204,7 @@ table.addEventListener("click", function(evt){
 });
 // EVENT CLICK LISTENER THAT RERUNS INIT WITH A STATE OF TRUE
 redoBtn.addEventListener("click", function(evt){
-    /* 
+    /*
     this is kind of wierd
     ---------------------
     this checks to see if init returns true or false
