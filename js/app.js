@@ -4,7 +4,9 @@ const stars = document.querySelector(".rank").children;
 const redoBtn = document.querySelector(".redo");
 const results = document.querySelector(".results");
 const seconds = document.querySelector(".seconds");
-let turns;
+const wrong = "flaticon-cancel";
+const right = "flaticon-check";
+const pending = "flaticon-help";
 let deck = [
     "sun", "sun",
     "snowflake", "snowflake",
@@ -15,9 +17,7 @@ let deck = [
     "humidity", "humidity",
     "thunder", "thunder"
 ];
-const wrong = 'flaticon-cancel';
-const right = 'flaticon-check';
-const pending = 'flaticon-help';
+let turns;
 let matchedCards = [];
 let flippedCards = [];
 let victory = false;
@@ -101,6 +101,7 @@ function matchCheck(array){
         let t2 = array[1].querySelector(".type").classList[1];
         if (t1 === t2) {
             array.forEach(function (item) {
+                console.log(t1);
                 // adds matched class to card
                 item.classList.add("matched");
                 // changes status emblem to show that match is correct
@@ -125,6 +126,7 @@ function matchCheck(array){
             array.length = 0;
         }
         propmtUpdate();
+        rankCheck(turns);
         gameSet();
     }
 }
@@ -199,7 +201,7 @@ function gameSet(){
 table.addEventListener("click", function(evt){
     // click event only triggers functions if it is a vanilla card
     if (evt.target.classList == "card") {
-        clicked(evt.target), matchCheck(flippedCards), rankCheck(turns)
+        clicked(evt.target), matchCheck(flippedCards)
     }
 });
 // EVENT CLICK LISTENER THAT RERUNS INIT WITH A STATE OF TRUE

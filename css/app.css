@@ -102,7 +102,6 @@ body {
             var(--color-6),
             var(--color-7));
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
     /* box-shadow: var(--border-2); */
 }
 .card:hover:not(.flip) {
@@ -128,7 +127,6 @@ body {
     z-index: 14;
     transition: all 1.4s, opacity .4s;
     backface-visibility: hidden;
-    -webkit-backface-visibility: hidden;
 }
 .flip.card::before{
     content: "";
@@ -175,7 +173,7 @@ body {
     margin-right: 1rem;
     width: 20rem;
     text-align: center;
-    font-size: 1.2em;
+    /* font-size: 1.2em; */
 }
 .rank {
     display: flex;
@@ -367,7 +365,7 @@ body {
     .header {
         display: flex;
         position: absolute;
-        top: 3rem;
+        top: 2rem;
         left: 50%;
         font-size: 3rem;
         transform:
@@ -375,8 +373,6 @@ body {
             rotate(0);
     }
 }
-
-
 
 @media screen and (max-height: 400px){
     .game-ui {
