@@ -39,7 +39,7 @@ function init(state){
     else{
         stopTimer();
         showResults();
-        matchedCards.length = "";
+        matchedCards.length = 0;
         return false;
     }
 }
