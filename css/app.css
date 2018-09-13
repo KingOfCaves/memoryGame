@@ -92,7 +92,6 @@ body {
     height: 12rem;
     margin: 2rem;
 
-    transition: transform .3s;
     flex-shrink: 0;
     z-index: 10;
     box-shadow: 0 0 2rem rgba(0,0,0,0.8);
@@ -104,8 +103,8 @@ body {
     backface-visibility: hidden;
     /* box-shadow: var(--border-2); */
 }
-.card:hover:not(.flip) {
-    transform: translateY(-4px);
+.card:hover:not(.flip).card::before {
+    transform: translate(8px, -8px);
 }
 .card::before {
     content: "";
@@ -125,7 +124,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 14;
-    transition: all 1.4s, opacity .4s;
+    transition: transform .2s, opacity .4s;
     backface-visibility: hidden;
 }
 .flip.card::before{
