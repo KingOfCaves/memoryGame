@@ -7,6 +7,8 @@ const seconds = document.querySelector(".seconds");
 const wrong = "flaticon-cancel";
 const right = "flaticon-check";
 const pending = "flaticon-help";
+const resultMessage = document.querySelector(".results__title");
+resultMessage.textContent = "donate to my patreon"
 let deck = [
     "sun", "sun",
     "snowflake", "snowflake",
@@ -35,7 +37,7 @@ function init(state){
         startTimer();
         return true;
     }
-    // IF INIT IS CALLED AND STATE
+    // if init is called and its state is false it ends the game
     else{
         stopTimer();
         showResults();
@@ -138,14 +140,19 @@ function rankCheck(num) {
     // star rank A
     if (num >= difficuly){
         stars[stars.length - 1].className = "flaticon-star";
+        resultMessage.textContent = "PRETTY GOOD AYY?";
         //  star rank B
-        if (num >= difficuly * 2){
+        if (num >= difficuly * 1.5){
             stars[stars.length - 2].className = "flaticon-star";
+            resultMessage.textContent = "TRY AGAIN!";
             // star rank C
-            if (num >= difficuly * 3) {
+            if (num >= difficuly * 2) {
                 stars[stars.length - 3].className = "flaticon-star";
+                resultMessage.textContent = "AAAAAAAAAAAAAAAAAAA";
             }
         }
+    } else {
+        resultMessage.textContent = "300 IQ PLAY!";
     }
 }
 

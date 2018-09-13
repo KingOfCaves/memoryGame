@@ -11,7 +11,7 @@
                 0 0 0 1rem var(--color-4),
                 0 0 0 1.5rem var(--color-5);
                 /* 0 0 3rem 1.5rem rgba(0,0,0,0.6); */
-    --border-2: 0 0 0 .3rem var(--color-4);
+    --border-2: 0 0 0 .5rem var(--color-4);
 }
 html {
     font-size: 62.5%;
@@ -164,19 +164,18 @@ body {
     box-shadow: var(--border-1);
 
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     font-size: 4.8rem;
     cursor: default;
 }
 .prompt {
     margin-right: 1rem;
-    width: 20rem;
     text-align: center;
     /* font-size: 1.2em; */
 }
 .rank {
     display: flex;
-    margin-right: auto;
     font-size: .6em;
 }
 .rank *:not(:last-child) {
@@ -203,7 +202,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -55%);
+    transform: translate(-50%, -50%);
     z-index: 16;
     display: flex;
     justify-content: center;
@@ -217,9 +216,9 @@ body {
     transition: inherit;
 }
 .results-open {
-    background-color: var(--color-2);
-    box-shadow: var(--border-1);
-    height: 30%;
+    background-color: var(--color-7);
+    box-shadow: var(--border-2);
+    height: 100%;
 }
 .results-open * {
     opacity: 1;
@@ -229,7 +228,7 @@ body {
     font-size: 6rem;
     text-transform: uppercase;
 }
-.time {
+.results__time {
     font-size: 5rem;
 }
 
@@ -322,7 +321,7 @@ body {
     .results__title {
         font-size: 2.6rem;
     }
-    .time {
+    .results__time {
         font-size: 2rem;
     }
 }
