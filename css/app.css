@@ -293,9 +293,6 @@ body {
         width: 10rem;
         height: 8rem;
     }
-    .card:hover:not(.flip) {
-        transform: translateY(0);
-    }
     .game-ui {
         margin-top: .75rem;
         font-size: 2.4rem;
