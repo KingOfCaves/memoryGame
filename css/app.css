@@ -216,8 +216,8 @@ body {
     transition: inherit;
 }
 .results-open {
-    background-color: #0f0f0faa;
-    box-shadow: 0 0 2rem 1rem #0f0f0faa;
+    background-color: #000000cc;
+    box-shadow: 0 0 2rem 1rem #000000cc;
     height: 100%;
 }
 .results-open * {
