@@ -9,7 +9,6 @@ const right = "flaticon-check";
 const pending = "flaticon-help";
 const resultMessage = document.querySelector(".results__title");
 resultMessage.textContent = "shiggy no diggy";
-
 let deck = [
     "sun", "sun",
     "snowflake", "snowflake",
@@ -23,8 +22,6 @@ let deck = [
 let turns;
 let matchedCards = [];
 let flippedCards = [];
-let mcLength = matchedCards.length;
-let deckLength = deck.length;
 let victory = false;
 let time = 0;
 let timer;
@@ -34,6 +31,7 @@ function init(state){
     // if init is called and state is true then is proceeds to setup the entire page
     if(state){
         flushArray(flippedCards);
+        flushArray(matchedCards);
         hideResults(results);
         rankReset(stars);
         tableClear(table);
@@ -43,9 +41,10 @@ function init(state){
     }
     // if init is called and its state is false it ends the game
     else{
-        flushArray(flippedCards);
         stopTimer();
         showResults();
+        flushArray(flippedCards);
+        flushArray(matchedCards);
         return false;
     }
 }
@@ -115,7 +114,7 @@ function matchCheck(array, num, msg){
                 matchedCards.push(item);
             });
             // flushes array
-            array.length = 0;
+            flushArray(array)
         } else {
             console.log(t1);
             console.log(t2);
@@ -129,7 +128,7 @@ function matchCheck(array, num, msg){
                 }, 2000)
             });
             // flushes array
-            array.length = 0;
+            flushArray(array)
         }
         propmtUpdate();
         rankCheck(num, msg);
@@ -158,10 +157,6 @@ function rankCheck(num, msg) {
     } else {
         msg.textContent = "300 IQ PLAY!";
     }
-}
-
-function flushArray(array){
-    array.length = 0;
 }
 
 function propmtUpdate(){
@@ -207,16 +202,20 @@ function hideResults(){
 
 //FUNCTION FOR CHECKING IF THE AMOUNT OF MATCHED CARDS IS EQUAL TO DECK
 function gameSet(){
-    if (mcLength === deckLength) {
+    if (matchedCards.length === deck.length) {
         init(false);
     }
+}
+
+function flushArray(array){
+    array.length = 0;
 }
 
 // EVENT CLICK LISTENER ON TABLE
 table.addEventListener("click", function(evt){
     // click event only triggers functions if it is a vanilla card
     if (evt.target.classList == "card") {
-        clicked(evt.target), matchCheck(flippedCards, turns, resultMessage);
+        clicked(evt.target), matchCheck(flippedCards, turns, resultMessage)
     }
 });
 // EVENT CLICK LISTENER THAT RERUNS INIT WITH A STATE OF TRUE
