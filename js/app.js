@@ -8,7 +8,8 @@ const wrong = "flaticon-cancel";
 const right = "flaticon-check";
 const pending = "flaticon-help";
 const resultMessage = document.querySelector(".results__title");
-resultMessage.textContent = "donate to my patreon"
+resultMessage.textContent = "shiggy no diggy";
+
 let deck = [
     "sun", "sun",
     "snowflake", "snowflake",
@@ -22,6 +23,8 @@ let deck = [
 let turns;
 let matchedCards = [];
 let flippedCards = [];
+let mcLength = matchedCards.length;
+let deckLength = deck.length;
 let victory = false;
 let time = 0;
 let timer;
@@ -41,7 +44,7 @@ function init(state){
     else{
         stopTimer();
         showResults();
-        matchedCards.length = 0;
+        mcLength = 0;
         return false;
     }
 }
@@ -96,7 +99,7 @@ function rankReset(array){
 }
 
 // CHECKING FOR MATCH IN FLIPPEDCARDS ARRAY
-function matchCheck(array){
+function matchCheck(array, num, msg){
     // checks to make sure that at least 2 cards are preset in array
     if (array.length % 2 === 0) {
         let t1 = array[0].querySelector(".type").classList[1];
@@ -128,19 +131,19 @@ function matchCheck(array){
             array.length = 0;
         }
         propmtUpdate();
-        rankCheck(turns);
+        rankCheck(num, msg);
         gameSet();
     }
 }
 
 // CHECKS FOR THE CHANGES IN TURNS AND CHANGES THE STAR RANK ACCORDINGLY
-function rankCheck(num) {
+function rankCheck(num, msg) {
     // multiple for turns to check for
     let difficuly = 12;
     // star rank A
     if (num >= difficuly){
         stars[stars.length - 1].className = "flaticon-star";
-        resultMessage.textContent = "PRETTY GOOD AYY?";
+        msg.textContent = "PRETTY GOOD AYY?";
         //  star rank B
         if (num >= difficuly * 1.5){
             stars[stars.length - 2].className = "flaticon-star";
@@ -199,7 +202,7 @@ function hideResults(){
 
 //FUNCTION FOR CHECKING IF THE AMOUNT OF MATCHED CARDS IS EQUAL TO DECK
 function gameSet(){
-    if (matchedCards.length === deck.length) {
+    if (mcLength === deckLength) {
         init(false);
     }
 }
@@ -208,7 +211,7 @@ function gameSet(){
 table.addEventListener("click", function(evt){
     // click event only triggers functions if it is a vanilla card
     if (evt.target.classList == "card") {
-        clicked(evt.target), matchCheck(flippedCards)
+        clicked(evt.target), matchCheck(flippedCards, turns, resultMessage)
     }
 });
 // EVENT CLICK LISTENER THAT RERUNS INIT WITH A STATE OF TRUE
