@@ -33,6 +33,7 @@ let timer;
 function init(state){
     // if init is called and state is true then is proceeds to setup the entire page
     if(state){
+        flushArray(flippedCards);
         hideResults(results);
         rankReset(stars);
         tableClear(table);
@@ -42,9 +43,9 @@ function init(state){
     }
     // if init is called and its state is false it ends the game
     else{
+        flushArray(flippedCards);
         stopTimer();
         showResults();
-        mcLength = 0;
         return false;
     }
 }
@@ -147,16 +148,20 @@ function rankCheck(num, msg) {
         //  star rank B
         if (num >= difficuly * 1.5){
             stars[stars.length - 2].className = "flaticon-star";
-            resultMessage.textContent = "TRY AGAIN!";
+            msg.textContent = "TRY AGAIN!";
             // star rank C
             if (num >= difficuly * 2) {
                 stars[stars.length - 3].className = "flaticon-star";
-                resultMessage.textContent = "AAAAAAAAAAAAAAAAAAA";
+                msg.textContent = "AAAAAAAAAAAAAAAAAAA";
             }
         }
     } else {
-        resultMessage.textContent = "300 IQ PLAY!";
+        msg.textContent = "300 IQ PLAY!";
     }
+}
+
+function flushArray(array){
+    array.length = 0;
 }
 
 function propmtUpdate(){
@@ -211,7 +216,7 @@ function gameSet(){
 table.addEventListener("click", function(evt){
     // click event only triggers functions if it is a vanilla card
     if (evt.target.classList == "card") {
-        clicked(evt.target), matchCheck(flippedCards, turns, resultMessage)
+        clicked(evt.target), matchCheck(flippedCards, turns, resultMessage);
     }
 });
 // EVENT CLICK LISTENER THAT RERUNS INIT WITH A STATE OF TRUE
