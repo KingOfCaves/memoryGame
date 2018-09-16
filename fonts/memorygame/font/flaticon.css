@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 01/09/2018 23:00
+  	Creation date: 16/09/2018 09:43
   	*/
 
 @font-face {
@@ -22,7 +22,7 @@
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
   font-family: Flaticon;
   font-style: normal;
 }
@@ -32,9 +32,13 @@
 .flaticon-star-1:before { content: "\f102"; }
 .flaticon-check:before { content: "\f103"; }
 .flaticon-cancel:before { content: "\f104"; }
-.flaticon-help:before { content: "\f105"; }
-.flaticon-sun:before { content: "\f106"; }
-.flaticon-snowflake:before { content: "\f107"; }
-.flaticon-humidity:before { content: "\f108"; }
-.flaticon-thunder:before { content: "\f109"; }
-.flaticon-half-moon:before { content: "\f10a"; }
+.flaticon-snowflake:before { content: "\f105"; }
+.flaticon-humidity:before { content: "\f106"; }
+.flaticon-thunder:before { content: "\f107"; }
+.flaticon-sunrise:before { content: "\f108"; }
+.flaticon-night:before { content: "\f109"; }
+.flaticon-cloud:before { content: "\f10a"; }
+.flaticon-hailing:before { content: "\f10b"; }
+.flaticon-tornado:before { content: "\f10c"; }
+.flaticon-help:before { content: "\f10d"; }
+.flaticon-help-1:before { content: "\f10e"; }

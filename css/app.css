@@ -184,16 +184,16 @@ body {
 .redo {
     display: flex;
     align-items: center;
-    padding: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    font-size: .8em;
+    color: var(--color-4);
 }
-.redo svg {
-    width: 3rem;
-    height: 3rem;
-    transition: all 1s;
-    fill: var(--color-4);
+.redo span {
+    transition: all .5s;
 }
-.redo:hover svg{
-    transform: rotateZ(-360deg);
+.redo:hover span {
+    transform: scale(.8);
 }
 
 .results {
@@ -217,7 +217,7 @@ body {
 }
 .results-open {
     background-color: #000000cc;
-    box-shadow: 0 0 2rem 1rem #000000cc;
+    /* box-shadow: 0 0 2rem 1rem #000000cc; */
     height: 100%;
 }
 .results-open * {
@@ -299,7 +299,7 @@ body {
         margin-top: .75rem;
         font-size: 2.4rem;
         width: 36rem;
-        padding: 0;
+        padding: 0 2rem;
     }
     .prompt {
         width: auto;
@@ -319,10 +319,10 @@ body {
         font-size: 3rem;
     }
     .results__title {
-        font-size: 2.6rem;
+        font-size: 3rem;
     }
     .results__time {
-        font-size: 2rem;
+        font-size: 3.6rem;
     }
 }
 

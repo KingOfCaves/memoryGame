@@ -6,18 +6,18 @@ const results = document.querySelector(".results");
 const seconds = document.querySelector(".seconds");
 const wrong = "flaticon-cancel";
 const right = "flaticon-check";
-const pending = "flaticon-help";
+const pending = "flaticon-help-1";
 const resultMessage = document.querySelector(".results__title");
-resultMessage.textContent = "shiggy no diggy";
+resultMessage.textContent = "easter egg?";
 let deck = [
-    "sun", "sun",
-    "snowflake", "snowflake",
+    "sunrise", "sunrise",
+    "night", "night",
+    "cloud", "cloud",
     "humidity", "humidity",
+    "snowflake", "snowflake",
     "thunder", "thunder",
-    "sun", "sun",
-    "snowflake", "snowflake",
-    "humidity", "humidity",
-    "thunder", "thunder"
+    "tornado", "tornado",
+    "hailing", "hailing"
 ];
 let turns;
 let matchedCards = [];
@@ -139,22 +139,18 @@ function matchCheck(array, num, msg){
 // CHECKS FOR THE CHANGES IN TURNS AND CHANGES THE STAR RANK ACCORDINGLY
 function rankCheck(num, msg) {
     // multiple for turns to check for
-    let difficuly = 12;
-    // star rank A
+    let difficuly = 16;
+    // star rank C
     if (num >= difficuly){
         stars[stars.length - 1].className = "flaticon-star";
         msg.textContent = "PRETTY GOOD AYY?";
-        //  star rank B
+        //  star rank E
         if (num >= difficuly * 1.5){
             stars[stars.length - 2].className = "flaticon-star";
             msg.textContent = "TRY AGAIN!";
-            // star rank C
-            if (num >= difficuly * 2) {
-                stars[stars.length - 3].className = "flaticon-star";
-                msg.textContent = "AAAAAAAAAAAAAAAAAAA";
-            }
         }
     } else {
+        //star rank S
         msg.textContent = "300 IQ PLAY!";
     }
 }

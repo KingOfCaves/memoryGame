@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 01/09/2018 23:00
+    Creation date: 16/09/2018 09:43
     */
 
     @font-face {
@@ -41,21 +41,29 @@
 .flaticon-star-1:before { content: "\f102"; }
 .flaticon-check:before { content: "\f103"; }
 .flaticon-cancel:before { content: "\f104"; }
-.flaticon-help:before { content: "\f105"; }
-.flaticon-sun:before { content: "\f106"; }
-.flaticon-snowflake:before { content: "\f107"; }
-.flaticon-humidity:before { content: "\f108"; }
-.flaticon-thunder:before { content: "\f109"; }
-.flaticon-half-moon:before { content: "\f10a"; }
+.flaticon-snowflake:before { content: "\f105"; }
+.flaticon-humidity:before { content: "\f106"; }
+.flaticon-thunder:before { content: "\f107"; }
+.flaticon-sunrise:before { content: "\f108"; }
+.flaticon-night:before { content: "\f109"; }
+.flaticon-cloud:before { content: "\f10a"; }
+.flaticon-hailing:before { content: "\f10b"; }
+.flaticon-tornado:before { content: "\f10c"; }
+.flaticon-help:before { content: "\f10d"; }
+.flaticon-help-1:before { content: "\f10e"; }
     
     $font-Flaticon-star: "\f100";
     $font-Flaticon-undo: "\f101";
     $font-Flaticon-star-1: "\f102";
     $font-Flaticon-check: "\f103";
     $font-Flaticon-cancel: "\f104";
-    $font-Flaticon-help: "\f105";
-    $font-Flaticon-sun: "\f106";
-    $font-Flaticon-snowflake: "\f107";
-    $font-Flaticon-humidity: "\f108";
-    $font-Flaticon-thunder: "\f109";
-    $font-Flaticon-half-moon: "\f10a";
+    $font-Flaticon-snowflake: "\f105";
+    $font-Flaticon-humidity: "\f106";
+    $font-Flaticon-thunder: "\f107";
+    $font-Flaticon-sunrise: "\f108";
+    $font-Flaticon-night: "\f109";
+    $font-Flaticon-cloud: "\f10a";
+    $font-Flaticon-hailing: "\f10b";
+    $font-Flaticon-tornado: "\f10c";
+    $font-Flaticon-help: "\f10d";
+    $font-Flaticon-help-1: "\f10e";
