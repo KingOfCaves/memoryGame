@@ -29,7 +29,7 @@ body {
     background-size: cover;
     background-position: bottom;
 
-    font-family: "notepenmedium";
+    font-family: "comicoromedium";
     color: var(--color-4);
 }
 .wrapper {
@@ -57,7 +57,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
-    font-size: 4.8rem;
+    font-size: 5.6rem;
 }
 .github-link {
     display: flex;
@@ -166,7 +166,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 4.8rem;
+    font-size: 5.6rem;
     cursor: default;
 }
 .prompt {
@@ -225,11 +225,11 @@ body {
 }
 .results__title {
     margin-bottom: 1rem;
-    font-size: 6rem;
+    font-size: 10rem;
     text-transform: uppercase;
 }
 .results__time {
-    font-size: 5rem;
+    font-size: 8rem;
 }
 
 @media screen and (max-width: 1200px), screen and (max-height: 900px) {
@@ -268,7 +268,7 @@ body {
         position: absolute;
         left: 4rem;
         top: 50%;
-        font-size: 3rem;
+        font-size: 4rem;
         transform:
             translate(-50%, -50%)
             rotate(-90deg);

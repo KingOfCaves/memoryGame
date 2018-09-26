@@ -39,7 +39,7 @@ If you find problems concerning the media queries, please report them in reposit
 ## CREDITS
 
 ### Notepen
->Notepen by jeti: A pixel recreation of my handwriting. To keep things natural and lively, every single letter is unique, including
+>Notepen by jeti: A pixel recreation of my handwriting. To keep things natural and >lively, every single letter is unique, including
 >accented characters.
 >
 >You are free to use this font for personal or commercial projects, all I ask is that you include credit.
@@ -47,6 +47,15 @@ If you find problems concerning the media queries, please report them in reposit
 >Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
 >
 >More info: https://fontenddev.wordpress.com/notepen/
+
+### Comicoro
+>Note of the author
+>COMICORO by jeti: A pixel font designed after comic book dialogue lettering. The >uppercase is based on traditional all-caps lettering, while the lowercase takes >inspiration from comics that use mixed-case (for instance, in thoughts/narration). 
+>
+>You are free to use this font for personal or commercial projects, all I ask is that >you include credit.
+>
+>Licensed under CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+>More info: https://fontenddev.com/fonts/comicoro/
 
 ### Github Logo
 >Pixel tracing of Github Icon made by https://www.flaticon.com/authors/daniel-bruce from https://flaticon.com
