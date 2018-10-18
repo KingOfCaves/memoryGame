@@ -1,13 +1,13 @@
 # memoryGame
 
 ## TABLE OF CONTENTS
-* [Initializing](#initializing)
+* [Getting Started](#getting-started)
 * [Contributing](#contributing)
 * [Game](#game)
 * [Issues / Bugs](#issues--bugs)
 * [Credits](#credits)
 
-## INITIALIZING
+## GETTING STARTED
 If you would like to download the files and take a look at the code, please go ahead! All you have to do is download a copy of the main repository and then extract the files.
 
 If you just want to try out the application just click [here](https://kingofcaves.github.io/memoryGame/), it will take you to a live version hosted by Github Pages.
