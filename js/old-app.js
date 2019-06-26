@@ -172,7 +172,7 @@ function startTimer(){
     // creates timer for function that runs every 1000ms
     timer = setInterval(function () {
         time++;
-        console.log(time);
+        // console.log(time);
     }, 1000);
 }
 // FUNCTION
