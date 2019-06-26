@@ -24,7 +24,7 @@ body {
     height: 100vh;
     width: 100vw;
 
-    background-image: url("../img/bg5.png");
+    background-image: url("../img/bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom;
@@ -134,8 +134,9 @@ body {
 .status {
     display: block;
     position: absolute;
-    top: .2rem;
-    right: .2rem;
+    top: 0;
+	right: 0;
+	padding: 1rem;
     z-index: 12;
     opacity: .6;
     transition: opacity .4s;
@@ -244,7 +245,11 @@ body {
     }
     .type {
         font-size: 5rem;
-    }
+	}
+	.status {
+		font-size: 1.8rem;
+		padding: .6rem;
+	}
 }
 
 @media screen and (max-width: 900px),  screen and (max-height: 700px){
@@ -313,10 +318,11 @@ body {
         height: 2rem;
     }
     .status {
-        font-size: 1.2rem;
+		padding: .5rem;
+        font-size: 1.8rem;
     }
     .type {
-        font-size: 3rem;
+        font-size: 4rem;
     }
     .results__title {
         font-size: 3rem;
@@ -330,8 +336,10 @@ body {
     .card {
         width: 9rem;
         height: 7rem;
-    }
-
+	}
+	.status {
+		font-size: 1.4rem;
+	}
     .game-ui {
         width: 24rem;
     }
@@ -341,8 +349,10 @@ body {
     .card {
         width: 8rem;
         height: 6rem;
-    }
-
+	}
+	.type {
+		font-size: 3rem;
+	}
     .game-ui {
         width: 24rem;
     }
