@@ -2,6 +2,7 @@
 
 ## TABLE OF CONTENTS
 * [Getting Started](#getting-started)
+* [Screenshots](#screenshots)
 * [Contributing](#contributing)
 * [Game](#game)
 * [Issues / Bugs](#issues--bugs)
@@ -13,6 +14,9 @@ If you would like to download the files and take a look at the code, please go a
 If you just want to try out the application just click [here](https://kingofcaves.github.io/memoryGame/), it will take you to a live version hosted by Github Pages.
 
 NOTE: The /docs folder is not neccessary. I only used it to store .psd files and sprite sheets. Feel free to check them out or delete them.
+
+## SCREENSHOTS
+![picture of the memeory card game](./docs/memory-1.png)
 
 ## CONTRIBUTING
 pls help
