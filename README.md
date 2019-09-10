@@ -1,4 +1,4 @@
-# memoryGame
+# wills-memory-game
 
 ## TABLE OF CONTENTS
 * [Getting Started](#getting-started)
