@@ -1,4 +1,5 @@
 # wills-memory-game
+A simple game of memory built with JavaScript.
 
 ## TABLE OF CONTENTS
 * [Getting Started](#getting-started)
@@ -11,12 +12,12 @@
 ## GETTING STARTED
 If you would like to download the files and take a look at the code, please go ahead! All you have to do is download a copy of the main repository and then extract the files.
 
-If you just want to try out the application just click [here](https://kingofcaves.github.io/memoryGame/), it will take you to a live version hosted by Github Pages.
+If you just want to try out the application just click the link above. It will take you to a live version hosted by Github Pages.
 
-NOTE: The /docs folder is not neccessary. I only used it to store .psd files and sprite sheets. Feel free to check them out or delete them.
+NOTE: The /docs folder is not necessary. I only used it to store .psd files and sprite sheets. Feel free to check them out or delete them.
 
 ## SCREENSHOTS
-![picture of the memeory card game](./docs/memory-1.png)
+![picture of the memory card game](./docs/memory-1.png)
 
 ## CONTRIBUTING
 pls help
@@ -34,7 +35,7 @@ To reset the table, time, and rank, just click the redo arrow in the bottom righ
 
 ## ISSUES / BUGS
 
-I have yet to find a bug or issue, it looks like i accidently fixed most of the things that were bugging me. My only concern is how it looks on mobile devices. Most will look REALLY good, but some devices with smaller resolutions might not look or work as well. 
+I have yet to find a bug or issue, it looks like I accidentally fixed most of the things that were bugging me. My only concern is how it looks on mobile devices. Most will look REALLY good, but some devices with smaller resolutions might not look or work as well. 
 
 Some devices look way better in portrait mode, give it try!
 
