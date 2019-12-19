@@ -1,6 +1,8 @@
 # wills-memory-game
 A simple game of memory built with JavaScript.
 
+https://kingofcaves.github.io/wills-memory-game/
+
 ## TABLE OF CONTENTS
 * [Getting Started](#getting-started)
 * [Screenshots](#screenshots)
