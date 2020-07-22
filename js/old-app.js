@@ -25,7 +25,7 @@ let deck = [
 	'tornado',
 	'tornado',
 	'hailing',
-	'hailing'
+	'hailing',
 ];
 let turns;
 let matchedCards = [];
@@ -114,7 +114,7 @@ function matchCheck(array, num, msg) {
 		let t1 = array[0].querySelector('.type').classList[1];
 		let t2 = array[1].querySelector('.type').classList[1];
 		if (t1 === t2) {
-			array.forEach(function(item) {
+			array.forEach(function (item) {
 				console.log(t1);
 				// adds matched class to card
 				item.classList.add('matched');
@@ -127,9 +127,9 @@ function matchCheck(array, num, msg) {
 		} else {
 			console.log(t1);
 			console.log(t2);
-			array.forEach(function(item) {
+			array.forEach(function (item) {
 				item.querySelector('.status').classList.replace(pending, wrong);
-				setTimeout(function() {
+				setTimeout(function () {
 					// resets card class
 					item.classList = 'card';
 					// changes status emblem to show that match is wrong
@@ -179,7 +179,7 @@ function clicked(item) {
 // FUNCTION FOR STARTING THE TIMER AND SETTING UP RATE
 function startTimer() {
 	// creates timer for function that runs every 1000ms
-	timer = setInterval(function() {
+	timer = setInterval(function () {
 		time++;
 		// console.log(time);
 	}, 1000);
@@ -217,14 +217,14 @@ function flushArray(array) {
 }
 
 // EVENT CLICK LISTENER ON TABLE
-table.addEventListener('click', function(evt) {
+table.addEventListener('click', function (evt) {
 	// click event only triggers functions if it is a vanilla card
 	if (evt.target.classList == 'card') {
 		clicked(evt.target), matchCheck(flippedCards, turns, resultMessage);
 	}
 });
 // EVENT CLICK LISTENER THAT RERUNS INIT WITH A STATE OF TRUE
-redoBtn.addEventListener('click', function(evt) {
+redoBtn.addEventListener('click', function (evt) {
 	/*
     this is kind of wierd
     ---------------------

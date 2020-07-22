@@ -210,12 +210,12 @@ body {
 	opacity: 0;
 	transition: inherit;
 }
-.results-open {
+.results--open {
 	background-color: #000000cc;
 	/* box-shadow: 0 0 2rem 1rem #000000cc; */
 	height: 100%;
 }
-.results-open * {
+.results--open * {
 	opacity: 1;
 }
 .results__title {
