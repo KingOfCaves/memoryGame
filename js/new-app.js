@@ -29,7 +29,7 @@ let deck = [
 	'tornado',
 	'tornado',
 	'hailing',
-	'hailing',
+	'hailing'
 ];
 
 let turns = 0;
@@ -57,14 +57,15 @@ const shuffle = (array) => {
 };
 
 const tableSetup = () => {
-	// const shuffled = shuffle(deck);
-	const tableHTML = deck
+	matchedCards = [];
+	const shuffled = shuffle(deck);
+	const tableHTML = shuffled
 		.map((item) =>
 			[
 				`<li class=card data-type="${item}">`,
 				`	<span class="status ${pending}"></span>`,
 				`	<span class="type flaticon-${item}"></span>`,
-				'</li>',
+				'</li>'
 			].join('\n')
 		)
 		.join('\n');
@@ -170,7 +171,7 @@ $table.addEventListener('click', (e) => {
 			matchCheck({
 				element: target,
 				status: target.querySelector('.status'),
-				type: target.dataset.type,
+				type: target.dataset.type
 			});
 		}
 

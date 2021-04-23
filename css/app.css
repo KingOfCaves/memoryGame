@@ -7,8 +7,7 @@
 	--color-6: #84ffda;
 	--color-7: #1b89f7;
 
-	--border-1: 0 0 0 0.5rem var(--color-3), 0 0 0 1rem var(--color-4),
-		0 0 0 1.5rem var(--color-5);
+	--border-1: 0 0 0 0.5rem var(--color-3), 0 0 0 1rem var(--color-4), 0 0 0 1.5rem var(--color-5);
 	/* 0 0 3rem 1.5rem rgba(0,0,0,0.6); */
 	--border-2: 0 0 0 0.5rem var(--color-4);
 }
@@ -32,6 +31,7 @@ body {
 
 	font-family: 'comicoromedium';
 	color: var(--color-4);
+	user-select: none;
 }
 .wrapper {
 	width: 84rem;
@@ -111,8 +111,7 @@ body {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background-image: linear-gradient(to bottom, var(--color-6), var(--color-7)),
-		url('../img/card-back.png');
+	background-image: linear-gradient(to bottom, var(--color-6), var(--color-7)), url('../img/card-back.png');
 	background-blend-mode: color;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -183,12 +182,10 @@ body {
 	padding: 1rem;
 	font-size: 0.8em;
 	color: var(--color-4);
+	cursor: pointer;
 }
 .redo span {
 	transition: all 0.5s;
-}
-.redo:hover span {
-	transform: scale(0.8);
 }
 
 .results {
@@ -247,8 +244,7 @@ body {
 
 @media screen and (max-width: 900px), screen and (max-height: 700px) {
 	:root {
-		--border-1: 0 0 0 0.25rem var(--color-3), 0 0 0 0.5rem var(--color-4),
-			0 0 0 0.75rem var(--color-5);
+		--border-1: 0 0 0 0.25rem var(--color-3), 0 0 0 0.5rem var(--color-4), 0 0 0 0.75rem var(--color-5);
 	}
 	body {
 		overflow: hidden;
